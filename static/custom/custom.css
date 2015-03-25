@@ -1,0 +1,81 @@
+@import url('http://fonts.googleapis.com/css?family=Montserrat:400');
+@import url('http://fonts.googleapis.com/css?family=Quattrocento:300');
+@import url('http://fonts.googleapis.com/css?family=Source+Code+Pro');
+
+/* Change code font */
+.CodeMirror pre {
+    font-family: 'Source Code Pro', Consolas, monocco, monospace;
+}
+
+
+div.text_cell {
+    max-width: 105ex; /* instead of 100%, */
+}
+
+div.text_cell_render {
+    font-family: "Quattrocento";
+    font-weight: 300;
+    font-size: 12.5pt;
+    line-height: 145%;
+    color: #353535;
+}
+
+div.text_cell_render h1,
+div.text_cell_render h2,
+div.text_cell_render h3,
+div.text_cell_render h4,
+div.text_cell_render h5,
+div.text_cell_render h6 {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    color: #000;
+}
+
+div.text_cell_render h1 {
+    font-size: 24pt;
+}
+
+div.text_cell_render h2 {
+    font-size: 18pt;
+}
+
+div.text_cell_render h3 {
+    font-size: 14pt;
+}
+
+.rendered_html pre,
+.rendered_html code {
+    font-size: medium;
+}
+
+.rendered_html ol {
+    list-style:decimal;
+    margin: 1em 2em;
+}
+
+div.input_prompt{
+    color:#666;
+}
+
+/* Nicer default for tables */
+table{font-size: 10pt;}
+table, th, td{border-color: #c0c0c0 !important;}
+th{background: #eee; color: #333;}
+td{background: #fff;}
+
+/* Pretty Pandas Dataframes */
+.dataframe * {border-color: #c0c0c0 !important;}
+.dataframe th{background: #eee;}
+.dataframe td{
+    background: #fff;
+    text-align: right; 
+    min-width:5em;
+}
+
+/* Format summary rows */
+.dataframe-summary-row tr:last-child,
+.dataframe-summary-col td:last-child{
+    background: #eee;
+    font-weight: 500;
+}
+

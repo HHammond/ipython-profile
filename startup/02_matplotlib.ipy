@@ -1,0 +1,4 @@
+from matplotlib import pyplot as plt
+%matplotlib inline
+
+plt.rcParams['figure.figsize'] = 12, 6

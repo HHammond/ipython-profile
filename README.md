@@ -10,9 +10,17 @@ plotting by default.
 
 * Pretty Tables and Notebook
 
-* DataFrame Summary Row and Column
+* DataFrame Summary Row and Column:
 
-* Percentage Formatting
+    ```
+    summarize(df)
+    ```
+
+* Percentage Formatting:
+    
+    ```
+    as_percent(0.5)
+    ```
 
 * Automatic Imports:
     * Numpy as `np`

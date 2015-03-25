@@ -4,8 +4,6 @@ This repo is a clone of my local IPython profile which adds a features to
 IPython such as importing Matplotlib, Numpy and Pandas as well as setting inline
 plotting by default.
 
-[Preview Available Here](https://imgur.com/a/y95sC)
-
 ## Features:
 
 * Pretty Tables and Notebook

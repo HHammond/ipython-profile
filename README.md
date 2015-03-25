@@ -16,11 +16,15 @@ plotting by default.
     summarize(df)
     ```
 
+    Function information [here](https://github.com/HHammond/ipython-profile/blame/master/startup/01_init_formatting.py#L7-L37).
+
 * Percentage Formatting:
-    
+
     ```
     as_percent(0.5)
     ```
+    
+    Function information [here](https://github.com/HHammond/ipython-profile/blame/master/startup/01_init_formatting.py#L40-L55).
 
 * Automatic Imports:
     * Numpy as `np`

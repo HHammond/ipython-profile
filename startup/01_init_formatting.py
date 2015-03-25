@@ -41,12 +41,12 @@ def as_percent(v, precision='0.2'):
     """Convert number to percentage string.
 
     Input:
-    ======
+    ------
     v : the number to be converted
     precision : the precision of the output format
 
     Returns:
-    ========
+    --------
     Percentage String
     """
     if isinstance(v, Number):

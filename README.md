@@ -4,6 +4,16 @@ This repo is a clone of my local IPython profile which adds a features to
 IPython such as importing Matplotlib, Numpy and Pandas as well as setting inline
 plotting by default.
 
+I use this profile with my D3 inspired [Matplotlibrc](https://github.com/HHammond/Matplotlibrc).
+
+To use this IPython profile just use the following bash commands:
+
+```bash
+cd $(ipython locate)
+mv profile_default profile_default.bk
+git clone git@github.com:HHammond/ipython-profile.git profile_default
+```
+
 ## Features:
 
 * Pretty Tables and Notebook

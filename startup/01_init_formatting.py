@@ -1,10 +1,11 @@
 import numpy as np
 import pandas as pd
 from functools import partial
+from numbers import Number
 
 
-def summary(df, fn=np.sum, axis=0, name='Total',
-            table_class_prefix='dataframe-summary'):
+def summarize(df, fn=np.sum, axis=0, name='Total',
+              table_class_prefix='dataframe-summary'):
     """Append a summary row or column to DataFrame.
 
     Input:
@@ -34,3 +35,21 @@ def summary(df, fn=np.sum, axis=0, name='Total',
     # Patch to_html function to use custom css class
     out.to_html = partial(out.to_html, classes=table_class)
     return out
+
+
+def as_percent(v, precision='0.2'):
+    """Convert number to percentage string.
+
+    Input:
+    ======
+    v : the number to be converted
+    precision : the precision of the output format
+
+    Returns:
+    ========
+    Percentage String
+    """
+    if isinstance(v, Number):
+        return "{{:{}%}}".format(precision).format(v)
+    else:
+        raise TypeError("Numeric type required")
